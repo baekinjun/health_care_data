@@ -4,4 +4,4 @@
 
 ## INSTALLATION
 How to install source code
-  git clone https://github.com/baekinjun/health_care_data.git
+    git clone https://github.com/baekinjun/health_care_data.git
