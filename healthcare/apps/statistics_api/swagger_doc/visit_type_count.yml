@@ -1,0 +1,27 @@
+tags:
+  - 방문 유형별 환자수
+responses:
+  200:
+    description: A visit_type_count
+    schema:
+      id: visit_type_count
+    examples:
+      {
+        "status": 200,
+        "result": "Your request is successful",
+        "message": "[OK]",
+        "data": [
+        {
+          "visit_type": "Outpatient Visit",
+          "count": 37026
+        },
+        {
+          "visit_type": "Inpatient Visit",
+          "count": 1309
+        },
+        {
+          "visit_type": "Emergency Room Visit",
+          "count": 3475
+        }
+        ]
+      }

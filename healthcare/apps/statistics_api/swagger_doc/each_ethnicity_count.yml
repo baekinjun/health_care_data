@@ -1,0 +1,23 @@
+tags:
+  - 민족별 환자수
+responses:
+  200:
+    description: each_ethnicity_count
+    schema:
+      id: each_ethnicity_count
+    examples:
+      {
+        "status": 200,
+        "result": "Your request is successful",
+        "message": "[OK]",
+        "data": [
+        {
+          "ethnicity": "nonhispanic",
+          "count": 880
+        },
+        {
+          "ethnicity": "hispanic",
+          "count": 120
+        }
+        ]
+      }

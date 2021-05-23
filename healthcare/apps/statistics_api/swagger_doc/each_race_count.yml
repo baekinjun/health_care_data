@@ -1,0 +1,35 @@
+tags:
+  - 인종별 환자
+responses:
+  200:
+    description: A each_race_count
+    schema:
+      id: each_race_count
+    examples:
+      {
+        "status": 200,
+        "result": "Your request is successful",
+        "message": "[OK]",
+        "data": [
+        {
+          "race_person": "other",
+          "count": 1
+        },
+        {
+          "race_person": "native",
+          "count": 3
+        },
+        {
+          "race_person": "black",
+          "count": 86
+        },
+        {
+          "race_person": "white",
+          "count": 845
+        },
+        {
+          "race_person": "asian",
+          "count": 65
+        }
+        ]
+      }

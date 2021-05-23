@@ -1,0 +1,104 @@
+tags:
+  - drug 검색 api
+parameters:
+  - in: query
+    name: page
+    type: int
+    required: false
+  - in: query
+    name: keyword
+    type: string
+    required: false
+responses:
+  200:
+    description: drug 검색결과
+    schema:
+      id: drug_search
+    examples:
+      {
+        "status": 200,
+        "result": "Your request is successful",
+        "message": "[OK]",
+        "data": [
+        {
+          "person_id": 26922,
+          "drug_concept_id": 19073183,
+          "drug_source_value": "amoxicillin 250 MG Oral Capsule",
+          "drug_exposure_start_datetime": "2017-05-04 01:41:54",
+          "drug_exposure_end_datetime": "2017-05-18 01:41:54",
+          "visit_occurrence_id": 99499216
+        },
+        {
+          "person_id": 2955,
+          "drug_concept_id": 40231925,
+          "drug_source_value": "acetaminophen 325 MG / oxycodone hydrochloride 5 MG Oral Tablet",
+          "drug_exposure_start_datetime": "2016-07-24 13:28:53",
+          "drug_exposure_end_datetime": "2016-09-23 13:28:53",
+          "visit_occurrence_id": 9251642
+        },
+        {
+          "person_id": 2955,
+          "drug_concept_id": 40229134,
+          "drug_source_value": "acetaminophen 21.7 MG/ML / dextromethorphan hydrobromide 1 MG/ML / doxylamine succinate 0.417 MG/ML Oral Solution",
+          "drug_exposure_start_datetime": "2015-04-02 13:28:53",
+          "drug_exposure_end_datetime": "2015-04-16 13:28:53",
+          "visit_occurrence_id": 57618650
+        },
+        {
+          "person_id": 2955,
+          "drug_concept_id": 1115171,
+          "drug_source_value": "naproxen sodium 220 MG Oral Tablet",
+          "drug_exposure_start_datetime": "2016-07-24 13:28:53",
+          "drug_exposure_end_datetime": "2016-08-23 13:28:53",
+          "visit_occurrence_id": 9251642
+        },
+        {
+          "person_id": 2955,
+          "drug_concept_id": 40213154,
+          "drug_source_value": "Influenza, seasonal, injectable, preservative free",
+          "drug_exposure_start_datetime": "2011-04-04 13:28:53",
+          "drug_exposure_end_datetime": "2011-04-04 13:28:53",
+          "visit_occurrence_id": 57618654
+        },
+        {
+          "person_id": 2955,
+          "drug_concept_id": 40213154,
+          "drug_source_value": "Influenza, seasonal, injectable, preservative free",
+          "drug_exposure_start_datetime": "2013-04-08 13:28:53",
+          "drug_exposure_end_datetime": "2013-04-08 13:28:53",
+          "visit_occurrence_id": 57618655
+        },
+        {
+          "person_id": 2955,
+          "drug_concept_id": 40213154,
+          "drug_source_value": "Influenza, seasonal, injectable, preservative free",
+          "drug_exposure_start_datetime": "2015-04-13 13:28:53",
+          "drug_exposure_end_datetime": "2015-04-13 13:28:53",
+          "visit_occurrence_id": 57618656
+        },
+        {
+          "person_id": 2955,
+          "drug_concept_id": 40213154,
+          "drug_source_value": "Influenza, seasonal, injectable, preservative free",
+          "drug_exposure_start_datetime": "2015-04-20 13:28:53",
+          "drug_exposure_end_datetime": "2015-04-20 13:28:53",
+          "visit_occurrence_id": 9251643
+        },
+        {
+          "person_id": 2955,
+          "drug_concept_id": 40213260,
+          "drug_source_value": "zoster vaccine, live",
+          "drug_exposure_start_datetime": "2017-03-20 13:28:53",
+          "drug_exposure_end_datetime": "2017-03-20 13:28:53",
+          "visit_occurrence_id": 57618652
+        },
+        {
+          "person_id": 2955,
+          "drug_concept_id": 40213154,
+          "drug_source_value": "Influenza, seasonal, injectable, preservative free",
+          "drug_exposure_start_datetime": "2017-03-20 13:28:53",
+          "drug_exposure_end_datetime": "2017-03-20 13:28:53",
+          "visit_occurrence_id": 57618652
+        }
+        ]
+      }

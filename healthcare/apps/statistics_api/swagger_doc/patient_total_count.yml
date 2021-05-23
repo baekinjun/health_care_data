@@ -1,0 +1,16 @@
+tags:
+  - 전체 환자수
+responses:
+  200:
+    description: A patient_total_count
+    schema:
+      id: rec_username
+    examples:
+      {
+        "status": 200,
+        "result": "Your request is successful",
+        "message": "[OK]",
+        "data": {
+          "count": 1000
+        }
+      }

@@ -1,0 +1,23 @@
+tags:
+  - 성별 환자수
+responses:
+  200:
+    description: each_gender_count
+    schema:
+      id: each_gender_count
+    examples:
+      {
+        "status": 200,
+        "result": "Your request is successful",
+        "message": "[OK]",
+        "data": [
+        {
+          "gender": "M",
+          "count": 548
+        },
+        {
+          "gender": "F",
+          "count": 452
+        }
+        ]
+      }

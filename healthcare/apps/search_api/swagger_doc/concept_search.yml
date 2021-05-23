@@ -1,0 +1,74 @@
+tags:
+  - concept 검색 api
+parameters:
+  - in: query
+    name: page
+    type: int
+    required: false
+  - in: query
+    name: keyword
+    type: string
+    required: false
+responses:
+  200:
+    description: concept 검색결과
+    schema:
+      id: concept_search
+    examples:
+      {
+        "status": 200,
+        "result": "Your request is successful",
+        "message": "[OK]",
+        "data": [
+        {
+          "concept_id": 43847098,
+          "concept_name": "100000 MG heparin 0.2 UNT/MG / LEVOMENTHOL 0.003 MG/MG Topical Cream",
+          "domain_id": "Drug"
+        },
+        {
+          "concept_id": 43847099,
+          "concept_name": "100000 MG heparin 0.2 UNT/MG / LEVOMENTHOL 0.003 MG/MG Topical Cream [Sensicutan]",
+          "domain_id": "Drug"
+        },
+        {
+          "concept_id": 43847100,
+          "concept_name": "100000 MG rosemary oil 0.04 MG/MG Topical Cream [Rheuma Und Schmerzsalbe Winthrop] by Winthrop",
+          "domain_id": "Drug"
+        },
+        {
+          "concept_id": 43847101,
+          "concept_name": "100 ML Flumethasone 0.2 MG/ML Topical Cream",
+          "domain_id": "Drug"
+        },
+        {
+          "concept_id": 43847102,
+          "concept_name": "100 ML Flumethasone 0.2 MG/ML Topical Cream [Cerson Fettcreme 0,02]",
+          "domain_id": "Drug"
+        },
+        {
+          "concept_id": 43847103,
+          "concept_name": "100000 MG Honey preparation 0.02 MG/MG Topical Ointment",
+          "domain_id": "Drug"
+        },
+        {
+          "concept_id": 43847104,
+          "concept_name": "100000 MG pine needle oil (pinus mugo) 0.1 MG/MG Topical Cream",
+          "domain_id": "Drug"
+        },
+        {
+          "concept_id": 43847105,
+          "concept_name": "100000 MG pine needle oil (pinus mugo) 0.1 MG/MG Topical Cream [Nervpin]",
+          "domain_id": "Drug"
+        },
+        {
+          "concept_id": 43847106,
+          "concept_name": "100000 MG pine needle oil (pinus mugo) 0.1 MG/MG Topical Cream [Nervpin] Box of 100 by Schoening",
+          "domain_id": "Drug"
+        },
+        {
+          "concept_id": 43847107,
+          "concept_name": "100000 MG Turpentine 0.072 MG/MG Topical Ointment",
+          "domain_id": "Drug"
+        }
+        ]
+      }

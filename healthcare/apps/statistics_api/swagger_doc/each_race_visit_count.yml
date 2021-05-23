@@ -1,0 +1,35 @@
+tags:
+  - 인종별 방문자수
+responses:
+  200:
+    description: A each_race_visit_count_s
+    schema:
+      id: each_race_visit_count_s
+    examples:
+      {
+        "status": 200,
+        "result": "Your request is successful",
+        "message": "[OK]",
+        "data": [
+        {
+          "race_person": "other",
+          "count": 82
+        },
+        {
+          "race_person": "native",
+          "count": 89
+        },
+        {
+          "race_person": "black",
+          "count": 3326
+        },
+        {
+          "race_person": "white",
+          "count": 35487
+        },
+        {
+          "race_person": "asian",
+          "count": 2826
+        }
+        ]
+      }

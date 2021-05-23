@@ -1,0 +1,23 @@
+tags:
+  - 민족별 방문자수
+responses:
+  200:
+    description: A each_ethnicity_visit_count
+    schema:
+      id: each_ethnicity_visit_count
+    examples:
+      {
+        "status": 200,
+        "result": "Your request is successful",
+        "message": "[OK]",
+        "data": [
+        {
+          "ethnicity": "nonhispanic",
+          "count": 36981
+        },
+        {
+          "ethnicity": "hispanic",
+          "count": 4829
+        }
+        ]
+      }

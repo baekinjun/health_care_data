@@ -1,0 +1,16 @@
+tags:
+  - 사망한 환자수
+responses:
+  200:
+    description: A pass_away_person_count
+    schema:
+      id: pass_away_person_count
+    examples:
+      {
+        "status": 200,
+        "result": "Your request is successful",
+        "message": "[OK]",
+        "data": {
+          "pass_away_person_count": 152
+        }
+      }

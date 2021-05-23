@@ -1,0 +1,59 @@
+tags:
+  - 방문시 연령대별 방문자수
+responses:
+  200:
+    description: A each_generate_visit_count_s
+    schema:
+      id: each_generate_visit_count_s
+    examples:
+      {
+        "status": 200,
+        "result": "Your request is successful",
+        "message": "[OK]",
+        "data": [
+        {
+          "generation": 0,
+          "count": 3286
+        },
+        {
+          "generation": 10,
+          "count": 4889
+        },
+        {
+          "generation": 20,
+          "count": 5514
+        },
+        {
+          "generation": 30,
+          "count": 5642
+        },
+        {
+          "generation": 40,
+          "count": 6012
+        },
+        {
+          "generation": 50,
+          "count": 5890
+        },
+        {
+          "generation": 60,
+          "count": 4554
+        },
+        {
+          "generation": 70,
+          "count": 3568
+        },
+        {
+          "generation": 80,
+          "count": 1575
+        },
+        {
+          "generation": 90,
+          "count": 827
+        },
+        {
+          "generation": 100,
+          "count": 53
+        }
+        ]
+      }

@@ -1,0 +1,24 @@
+version: "3"
+
+services:
+  health:
+    build: ./healthcare
+    container_name: healthcare
+    restart: always
+    ports:
+      - "8000:8000"
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - ./healthcare:/healthcare
+  nginx:
+    build: ./nginx
+    container_name: nginx
+    restart: always
+    ports:
+      - "80:80"
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+    environment:
+      - TZ=Asia/Seoul
+    depends_on:
+      - health
