@@ -22,6 +22,6 @@ using flasgger (swagger lib)
     localhost or your ip address
     ex) localhost/apidocs
     
-    
+<img width="1053" alt="스크린샷 2021-05-23 오후 10 23 46" src="https://user-images.githubusercontent.com/58027908/119262271-92e8d680-bc15-11eb-853b-05d25fd26f24.png">
 
     
